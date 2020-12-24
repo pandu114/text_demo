@@ -1,1 +1,37 @@
 Hello Simple Learning
+
+Component:
+----------
+1.View
+2.Text
+3.Image
+4.Stylesheet
+5.TextInput
+6.Button
+
+Adding an Image
+
+<Image source={required('.assest/img_name.jpg')}/>
+
+useState:
+--------
+step1: import React, {useState} from 'react';
+step2:
+	const [emai, setEmail] = useState('');
+	const [password, setPassword] = useState('');
+Login Screen Code:
+
+TextInput:
+  <View>
+        <TextInput placeholder="password" placeholderTextColor="#003f5c" secureTextEntry={true} onChangeText={(password)=> setPassword(password)}/>
+      </View>
+TouchableOpacity:
+
+<TouchableOpacity>
+        <Text style={styles.forgot_button}>Forgot Password?</Text>
+      </TouchableOpacity>
+
+
+<TouchableOpacity>
+        <Text style={styles.forgot_button}>LOGIN</Text>
+      </TouchableOpacity>
